@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./Navbar";
 import Heading from "./Heading/Heading";
 import WeatherInfo from "./WeatherInfo/WeatherInfo";
-import FirstForecast from "./FirstForecast";
 import ForecastHourly from "./ForecastHourly/ForecastHourly";
 import ForecastDaily from "./ForecastDaily/ForecastDaily";
 import Footer from "./Footer";
