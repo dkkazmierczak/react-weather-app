@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MaxTemp() {
+const MaxTemp = () => {
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -19,3 +19,5 @@ export default function MaxTemp() {
     </div>
   );
 }
+
+export default MaxTemp;

@@ -1,11 +1,18 @@
+.ForecastHourly {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
 .table-heading {
   color: var(--secondary-color);
   font-size: 10px;
   font-weight: 500;
 }
 
-.table {
-  background-color: rgba(0, 0, 0, 0.3);
+.ForecastHourly .table {
+  margin: 0;
 }
 
 tr {

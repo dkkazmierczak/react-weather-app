@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar search-navbar my-2">
@@ -12,7 +12,7 @@ export default function Navbar() {
               type="search"
               placeholder="Search city"
               aria-label="Search"
-              autoComplete={false}
+              autoComplete="false"
               autoFocus={true}
             ></input>
           </li>
@@ -42,3 +42,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export default Navbar;

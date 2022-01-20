@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CurrentDate() {
+const CurrentDate = () => {
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -39,3 +39,5 @@ export default function CurrentDate() {
 
   return <div className="today-date">{weatherdata.date}</div>;
 }
+
+export default CurrentDate;

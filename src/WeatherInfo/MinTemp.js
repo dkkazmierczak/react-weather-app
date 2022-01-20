@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MinTemp() {
+const MinTemp = () => {
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -19,3 +19,5 @@ export default function MinTemp() {
     </div>
   );
 }
+
+export default MinTemp;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FeelsLike() {
+const FeelsLike = () => {
   let weatherdata = {
     city: "Halden",
     temp: 14,
@@ -18,3 +18,5 @@ export default function FeelsLike() {
     </div>
   );
 }
+
+export default FeelsLike;

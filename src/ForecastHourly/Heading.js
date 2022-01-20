@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Heading() {
+const Heading = () => {
   return (
     <div className="table-heading">
       <span role="img" aria-label="clock">
@@ -10,3 +10,5 @@ export default function Heading() {
     </div>
   );
 }
+
+export default Heading;

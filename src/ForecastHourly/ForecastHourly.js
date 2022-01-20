@@ -3,16 +3,15 @@ import Heading from "./Heading";
 
 import "./ForecastHourly.css";
 
-export default function ForecastHourly() {
+const ForecastHourly = () => {
   let forecastdata = {
     temp: 14,
     description: "cloudy",
     icon: "http://openweathermap.org/img/wn/10d@2x.png"
   };
   return (
-    <div>
+      <div className="ForecastHourly"> 
       <Heading />
-      <div className="hourly-forecast">
         <div className="table-responsive shadow">
           <table className="table">
             <tbody>
@@ -22,11 +21,11 @@ export default function ForecastHourly() {
                 <td>22:00</td>
                 <td>23:00</td>
                 <td>00:00</td>
-                <td>20:00</td>
                 <td>01:00</td>
                 <td>02:00</td>
                 <td>03:00</td>
                 <td>04:00</td>
+                <td>05:00</td>
               </tr>
               <tr>
                 <td>
@@ -116,6 +115,7 @@ export default function ForecastHourly() {
           </table>
         </div>
       </div>
-    </div>
   );
 }
+
+export default ForecastHourly;

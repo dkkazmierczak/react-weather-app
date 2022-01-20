@@ -1,3 +1,19 @@
+.WeatherInfo{
+  margin: 10px 0;
+}
+
+.bg-color {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 ul {
   margin: 0;
   list-style: none;
@@ -6,16 +22,13 @@ ul {
 
 .weather-info {
   color: var(--primary-color);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   text-align: center;
 }
 
-.sky-description {
-  color: var(--primary-color);
-  font-size: 15px;
-  font-weight: 300;
-  text-align: center;
+.today-date {
+  font-size: 20px;
 }
 
 .sky-description:first-letter {
@@ -26,17 +39,24 @@ ul {
   color: var(--secondary-color);
   text-align: center;
   font-style: italic;
-  font-size: 10px;
-}
-
-.today-date {
-  color: var(--primary-color);
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 300;
-  text-align: center;
+  font-size: 15px;
 }
 
 .min-temp {
   color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .weather-info {
+    font-size: 15px;
+  }
+
+  .today-date {
+    font-size: 15px;
+  }
+
+  .sky-description {
+    color: var(--secondary-color);
+    font-style: italic;
+  }
 }

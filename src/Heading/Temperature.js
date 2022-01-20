@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Temperature(props) {
+const Temperature = (props) => {
   let weatherdata = {
     description: "cloudy",
     icon: "http://openweathermap.org/img/wn/10d@2x.png"
@@ -12,3 +12,5 @@ export default function Temperature(props) {
     </span>
   );
 }
+
+export default Temperature;

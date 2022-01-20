@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Humidity() {
+const Humidity = () => {
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -15,3 +15,5 @@ export default function Humidity() {
   };
   return <div>Humidity : {weatherdata.humidity}%</div>;
 }
+
+export default Humidity;

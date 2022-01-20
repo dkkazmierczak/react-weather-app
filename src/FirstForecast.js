@@ -3,7 +3,7 @@ import FormatHours from "./FormatHours";
 
 import "./FirstForecast.css";
 
-export default function FirstForecast() {
+const FirstForecast = () => {
   let forecastdata = {
     temp: 7,
     description: "cloudy",
@@ -73,3 +73,5 @@ export default function FirstForecast() {
     </div>
   );
 }
+
+export default FirstForecast;

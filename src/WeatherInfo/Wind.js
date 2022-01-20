@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Wind() {
+const Wind = () =>{
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -15,3 +15,5 @@ export default function Wind() {
   };
   return <div>Wind : {weatherdata.wind}km/h</div>;
 }
+
+export default Wind;

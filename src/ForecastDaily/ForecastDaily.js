@@ -4,7 +4,7 @@ import FormatDay from "../FormatDay";
 
 import "./ForecastDaily.css";
 
-export default function ForecastDaily() {
+const ForecastDaily = () => {
   let forecastdata = {
     description: "cloudy",
     icon: "http://openweathermap.org/img/wn/10d@2x.png",
@@ -12,7 +12,7 @@ export default function ForecastDaily() {
     maxTemp: 10
   };
   return (
-    <div className="forecast-daily">
+    <div className="ForecastDaily">
       <Heading />
       <table className="table table-sm shadow">
         <tbody>
@@ -91,3 +91,5 @@ export default function ForecastDaily() {
     </div>
   );
 }
+
+export default ForecastDaily;

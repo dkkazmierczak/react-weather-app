@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Sky() {
+const Sky = () => {
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -15,3 +15,5 @@ export default function Sky() {
   };
   return <div className="sky-description">{weatherdata.description}</div>;
 }
+
+export default Sky;
