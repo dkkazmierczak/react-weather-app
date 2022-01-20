@@ -13,8 +13,9 @@ const ForecastDaily = () => {
   };
   return (
     <div className="ForecastDaily">
+      <div className="ForecastDaily-small d-lg-none">
       <Heading />
-      <table className="table table-sm shadow">
+      <table className="table table-sm d-lg-none shadow">
         <tbody>
           <tr>
             <th scope="row">Wednesday</th>
@@ -89,6 +90,133 @@ const ForecastDaily = () => {
         </tbody>
       </table>
     </div>
+
+    <div className="ForecastDaily-big">
+      <div className="row">
+      <div className="col-2 d-none d-md-block info">
+        <ul>
+          <li className="day">
+            Thursday
+          </li>
+          <li>
+            <img
+                src={forecastdata.icon}
+                className="df-img-big"
+                alt={forecastdata.description}
+              />
+          </li>
+          <li>
+            <div className="row">
+              <div className="col-4 min-temp-daily">
+                8°
+              </div>
+              <div className="col-4">
+                8°
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div className="col-2 d-none d-md-block info">
+        <ul>
+          <li className="day">
+            Friday
+          </li>
+          <li>
+            <img
+                src={forecastdata.icon}
+                className="df-img-big"
+                alt={forecastdata.description}
+              />
+          </li>
+          <li>
+            <div className="row">
+              <div className="col-4 min-temp-daily">
+                8°
+              </div>
+              <div className="col-4">
+                8°
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div><div className="col-2 d-none d-md-block info">
+        <ul>
+          <li className="day">
+            Saturday
+          </li>
+          <li>
+            <img
+                src={forecastdata.icon}
+                className="df-img-big"
+                alt={forecastdata.description}
+              />
+          </li>
+          <li>
+            <div className="row">
+              <div className="col-4 min-temp-daily">
+                8°
+              </div>
+              <div className="col-4">
+                8°
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div><div className="col-2 d-none d-md-block info">
+        <ul>
+          <li className="day">
+            Sunday
+          </li>
+          <li>
+            <img
+                src={forecastdata.icon}
+                className="df-img-big"
+                alt={forecastdata.description}
+              />
+          </li>
+          <li>
+            <div className="row">
+              <div className="col-4 min-temp-daily">
+                8°
+              </div>
+              <div className="col-4">
+                8°
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div><div className="col-2 d-none d-md-block info">
+        <ul>
+          <li className="day">
+            Monday
+          </li>
+          <li>
+            <img
+                src={forecastdata.icon}
+                className="df-img-big"
+                alt={forecastdata.description}
+              />
+          </li>
+          <li>
+            <div className="row">
+              <div className="col-4 min-temp-daily">
+                8°
+              </div>
+              <div className="col-4">
+                8°
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      
+
+    </div>
+    </div>
+
+</div>
   );
 }
 

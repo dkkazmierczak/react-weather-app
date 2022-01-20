@@ -1,20 +1,73 @@
 .ForecastDaily {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
-.table-heading {
+.ForecastDaily-small {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.ForecastDailyInfo {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.ForecastDaily .table-heading {
   color: var(--secondary-color);
   font-size: 10px;
   font-weight: 500;
 }
 
-.df-img {
+.ForecastDaily .df-img {
   width: 30px;
 }
 
-.min-temp-daily {
+.ForecastDaily .min-temp-daily {
+  color: var(--secondary-color);
+}
+
+.ForecastDaily tr {
+  color: var(--primary-color);
+}
+
+.ForecastDaily-big {
+  margin: 10px 0;
+  padding: 20px 0 10px;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.ForecastDaily-big .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ForecastDaily .info {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.ForecastDaily .day {
+  text-align: center;
+  font-weight: 500;
+}
+
+.ForecastDaily-big .row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ForecastDaily-big .df-img-big {
+  width: 60px;
+  display:block;
+  margin: 0 auto;
+}
+
+.ForecastDaily-big .min-temp-daily {
   color: var(--secondary-color);
 }

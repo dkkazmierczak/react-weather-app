@@ -13,7 +13,7 @@ import "./WeatherInfo.css";
   return (
   <div className="WeatherInfo container">
     <div className="row">
-      <div className="col-2 d-none d-md-block weather-info bg-color">
+      <div className="col-3 d-none d-md-block weather-info bg-color">
         <ul>
           <li>
             <MaxTemp />
@@ -24,7 +24,7 @@ import "./WeatherInfo.css";
         </ul>
       </div>
 
-      <div className="col-2 d-none d-md-block weather-info bg-color">
+      <div className="col-3 d-none d-md-block weather-info bg-color">
         <ul>
           <li>
             <CurrentDate />
@@ -35,7 +35,7 @@ import "./WeatherInfo.css";
         </ul>
       </div>
 
-      <div className="col-2 d-none d-md-block weather-info bg-color">
+      <div className="col-3 d-none d-md-block weather-info bg-color">
         <ul>
           <li>
             <Humidity />
@@ -45,8 +45,8 @@ import "./WeatherInfo.css";
           </li>
         </ul>
       </div>
-
     </div>
+    
     <div className="row">
     <div className="col-5 d-md-none weather-info bg-color">
       <div className="row">

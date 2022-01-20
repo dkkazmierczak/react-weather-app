@@ -1,61 +1,61 @@
-.WeatherInfo{
+.WeatherInfo {
   margin: 10px 0;
 }
 
-.bg-color {
-  background-color: rgba(0, 0, 0, 0.3);
+.WeatherInfo .bg-color {
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
 }
 
-.row {
+.WeatherInfo .row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-ul {
+.WeatherInfo ul {
   margin: 0;
   list-style: none;
   padding: 0;
 }
 
-.weather-info {
+.WeatherInfo .weather-info {
   color: var(--primary-color);
   font-size: 18px;
   font-weight: 300;
   text-align: center;
 }
 
-.today-date {
+.WeatherInfo .today-date {
   font-size: 20px;
 }
 
-.sky-description:first-letter {
+.WeatherInfo .sky-description:first-letter {
   text-transform: capitalize;
 }
 
-.feels-like {
+.WeatherInfo .feels-like {
   color: var(--secondary-color);
   text-align: center;
   font-style: italic;
   font-size: 15px;
 }
 
-.min-temp {
+.WeatherInfo .min-temp {
   color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
-  .weather-info {
+  .WeatherInfo .weather-info {
     font-size: 15px;
   }
 
-  .today-date {
+  .WeatherInfo .today-date {
     font-size: 15px;
   }
 
-  .sky-description {
+  .WeatherInfo .sky-description {
     color: var(--secondary-color);
     font-style: italic;
   }

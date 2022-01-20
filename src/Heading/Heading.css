@@ -2,17 +2,17 @@
   padding: 10px 0;
 }
 
-h1 {
+.Heading h1 {
   color: var(--primary-color);
   margin-top: 10px;
   text-align: center;
 }
 
-.temp-heading {
+.Heading .temp-heading {
   font-size: 70px;
 }
 
-.units {
+.Heading .units {
   color: var(--secondary-color);
   font-size: 27px;
   font-weight: 400;
