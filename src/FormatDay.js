@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FormatDay(x) {
   const date = new Date(x * 1000);
   const days = [

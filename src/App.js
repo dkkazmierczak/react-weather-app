@@ -10,13 +10,6 @@ import Footer from "./Footer";
 import "./App.css";
 
 const App = () => {
-  let weatherData = {
-    city: "Halden",
-    temp: 13,
-    wind: 5,
-    humidity: 80,
-    description: "cloudy"
-  };
 
   return (
     <div className="App">
