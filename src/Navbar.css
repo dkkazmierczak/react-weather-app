@@ -1,0 +1,13 @@
+.navbar-container {
+  align-items: left;
+  display: flex;
+}
+
+.search-navbar {
+  padding: 5px 0;
+}
+
+.search-navbar li {
+  display: inline-block;
+  text-decoration: none;
+}

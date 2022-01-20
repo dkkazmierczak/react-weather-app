@@ -1,0 +1,17 @@
+.table-heading {
+  color: var(--secondary-color);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.table {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+tr {
+  color: var(--primary-color);
+}
+
+.hf-img {
+  width: 30px;
+}

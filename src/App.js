@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Navbar";
+import Heading from "./Heading/Heading";
+import WeatherInfo from "./WeatherInfo/WeatherInfo";
+import FirstForecast from "./FirstForecast";
+import ForecastHourly from "./ForecastHourly/ForecastHourly";
+import ForecastDaily from "./ForecastDaily/ForecastDaily";
+import Footer from "./Footer";
 
-function App() {
+import "./App.css";
+
+const App = () => {
+  let weatherData = {
+    city: "Halden",
+    temp: 13,
+    wind: 5,
+    humidity: 80,
+    description: "cloudy"
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Navbar />
+        <Heading />
+        <WeatherInfo />
+        <FirstForecast />
+        <ForecastHourly />
+        <ForecastDaily />
+        <Footer />
+      </div>
     </div>
   );
-}
-
+};
 export default App;

@@ -1,0 +1,16 @@
+h1 {
+  color: var(--primary-color);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.temp-heading {
+  font-size: 70px;
+}
+
+.units {
+  color: var(--secondary-color);
+  font-size: 27px;
+  font-weight: 400;
+  vertical-align: 30px;
+}
