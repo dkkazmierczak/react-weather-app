@@ -1,5 +1,6 @@
 .ForecastDaily {
   border-radius: 10px;
+  text-align: center;
 }
 
 .ForecastDaily-small {
@@ -52,7 +53,6 @@
 }
 
 .ForecastDaily .day {
-  text-align: center;
   font-weight: 500;
 }
 
@@ -63,8 +63,8 @@
 }
 
 .ForecastDaily-big .df-img-big {
-  width: 60px;
-  display:block;
+  width: 100px;
+  display: block;
   margin: 0 auto;
 }
 

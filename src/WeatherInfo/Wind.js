@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-const Wind = () =>{
+const Wind = () => {
   let weatherdata = {
     city: "Halden",
     date: "Tuesday, 14:45",
@@ -11,9 +11,9 @@ const Wind = () =>{
     minTemp: 8,
     maxTemp: 10,
     humidity: 90,
-    wind: 5
-  };
-  return <div>Wind : {weatherdata.wind}km/h</div>;
+    wind: 5,
+  }
+  return <div>Wind : {weatherdata.wind}km/h</div>
 }
 
-export default Wind;
+export default Wind

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Sky = () => {
   let weatherdata = {
@@ -11,9 +11,9 @@ const Sky = () => {
     minTemp: 8,
     maxTemp: 10,
     humidity: 90,
-    wind: 5
-  };
-  return <div className="sky-description">{weatherdata.description}</div>;
+    wind: 5,
+  }
+  return <div className="sky-description">{weatherdata.description}</div>
 }
 
-export default Sky;
+export default Sky

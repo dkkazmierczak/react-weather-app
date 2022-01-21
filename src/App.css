@@ -4,7 +4,7 @@ body {
     rgb(241, 243, 248) 0%,
     rgb(142, 174, 253) 91%
   );
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -12,7 +12,7 @@ body {
   --secondary-color: rgba(255, 255, 255, 0.5);
 }
 
-.container-app{
+.container-app {
   background-color: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);

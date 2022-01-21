@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Heading = () => {
   return (
@@ -8,7 +8,7 @@ const Heading = () => {
       </span>{" "}
       HOURLY FORECAST
     </div>
-  );
+  )
 }
 
-export default Heading;
+export default Heading

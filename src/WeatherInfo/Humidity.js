@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Humidity = () => {
   let weatherdata = {
@@ -11,9 +11,9 @@ const Humidity = () => {
     minTemp: 8,
     maxTemp: 10,
     humidity: 90,
-    wind: 5
-  };
-  return <div>Humidity : {weatherdata.humidity}%</div>;
+    wind: 5,
+  }
+  return <div>Humidity : {weatherdata.humidity}%</div>
 }
 
-export default Humidity;
+export default Humidity

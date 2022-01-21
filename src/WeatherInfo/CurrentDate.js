@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const CurrentDate = () => {
   let weatherdata = {
@@ -11,8 +11,8 @@ const CurrentDate = () => {
     minTemp: 8,
     maxTemp: 10,
     humidity: 90,
-    wind: 5
-  };
+    wind: 5,
+  }
   /*const now = new Date();
   const days = [
     "Sunday",
@@ -37,7 +37,7 @@ const CurrentDate = () => {
     today.innerHTML = `{day}, {hours}:{minutes}`;
   }*/
 
-  return <div className="today-date">{weatherdata.date}</div>;
+  return <div className="today-date">{weatherdata.date}</div>
 }
 
-export default CurrentDate;
+export default CurrentDate

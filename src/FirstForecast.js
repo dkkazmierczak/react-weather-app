@@ -1,15 +1,15 @@
-import React from "react";
-import FormatHours from "./FormatHours";
+import React from "react"
+import FormatHours from "./FormatHours"
 
-import "./FirstForecast.css";
+import "./FirstForecast.css"
 
 const FirstForecast = () => {
   let forecastdata = {
     temp: 7,
     description: "cloudy",
-    icon: "http://openweathermap.org/img/wn/10d@2x.png"
-  };
-  let forecastHour = 1;
+    icon: "http://openweathermap.org/img/wn/10d@2x.png",
+  }
+  let forecastHour = 1
 
   return (
     <div className="first-forecast shadow">
@@ -71,7 +71,7 @@ const FirstForecast = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default FirstForecast;
+export default FirstForecast

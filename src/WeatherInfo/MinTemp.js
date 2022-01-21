@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const MinTemp = () => {
   let weatherdata = {
@@ -11,13 +11,13 @@ const MinTemp = () => {
     minTemp: 8,
     maxTemp: 10,
     humidity: 90,
-    wind: 5
-  };
+    wind: 5,
+  }
   return (
     <div className="min-temp">
       Min : {Math.round(weatherdata.minTemp * 10) / 10} °C
     </div>
-  );
+  )
 }
 
-export default MinTemp;
+export default MinTemp

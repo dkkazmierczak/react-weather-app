@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const MaxTemp = () => {
   let weatherdata = {
@@ -11,13 +11,13 @@ const MaxTemp = () => {
     minTemp: 8,
     maxTemp: 10,
     humidity: 90,
-    wind: 5
-  };
+    wind: 5,
+  }
   return (
     <div className="max-temp">
       Max : {Math.round(weatherdata.maxTemp * 10) / 10} °C
     </div>
-  );
+  )
 }
 
-export default MaxTemp;
+export default MaxTemp
