@@ -18,43 +18,12 @@ body {
   backdrop-filter: blur(8px);
 }
 
-@media (max-width: 350px) {
-  .today-date {
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 324px) {
-  .container {
+  .App .container {
     padding: 10px;
   }
 
   .lng-btn {
     display: none;
-  }
-  .weather-info,
-  .today-date,
-  .sky-description,
-  .first-forecast,
-  .hourly-forecast td,
-  .table {
-    font-size: 13px;
-  }
-
-  .ff-img {
-    width: 30px;
-  }
-
-  .df-img,
-  .hf-img {
-    width: 25px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  .temp-heading {
-    font-size: 60px;
   }
 }

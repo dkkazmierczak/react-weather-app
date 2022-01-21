@@ -16,16 +16,16 @@ const ForecastHourly = () => {
         <table className="table">
           <tbody>
             <tr>
-              <td>20:00</td>
-              <td>21:00</td>
-              <td>22:00</td>
-              <td>23:00</td>
-              <td>00:00</td>
-              <td>01:00</td>
-              <td>02:00</td>
-              <td>03:00</td>
-              <td>04:00</td>
-              <td>05:00</td>
+              <td className="time">20:00</td>
+              <td className="time">21:00</td>
+              <td className="time">22:00</td>
+              <td className="time">23:00</td>
+              <td className="time">00:00</td>
+              <td className="time">01:00</td>
+              <td className="time">02:00</td>
+              <td className="time">03:00</td>
+              <td className="time">04:00</td>
+              <td className="time">05:00</td>
             </tr>
             <tr>
               <td>
@@ -100,16 +100,16 @@ const ForecastHourly = () => {
               </td>
             </tr>
             <tr>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
-              <td>{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
+              <td className="temperature">{Math.round(1)}°</td>
             </tr>
           </tbody>
         </table>

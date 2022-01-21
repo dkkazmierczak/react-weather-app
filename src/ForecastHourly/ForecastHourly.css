@@ -1,6 +1,6 @@
 .ForecastHourly {
-  margin: 20px 0 10px;
-  padding: 10px 10px 10px;
+  margin: 40px 10px 20px;
+  padding: 15px 20px 20px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   text-align: center;
@@ -16,12 +16,37 @@
 
 .ForecastHourly .table {
   margin: 0;
+  color: var(--primary-color);
 }
 
-.ForecastHourly tr {
-  color: var(--primary-color);
+.ForecastHourly .time {
+  padding: 20px 10px;
 }
 
 .ForecastHourly .hf-img {
   width: 60px;
+}
+
+.ForecastHourly .temperature {
+  padding: 20px 10px;
+}
+
+@media (max-width: 768px) {
+  .ForecastHourly {
+    font-size: 15px;
+  }
+
+  .ForecastHourly .hf-img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 374px) {
+  .ForecastHourly {
+    font-size: 13px;
+  }
+
+  .ForecastHourly .hf-img {
+    width: 40px;
+  }
 }

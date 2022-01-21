@@ -18,3 +18,9 @@
   font-weight: 400;
   vertical-align: 30px;
 }
+
+@media (max-width: 324) {
+  .Heading .temp-heading {
+    font-size: 30px;
+  }
+}

@@ -1,19 +1,12 @@
 .ForecastDaily {
   border-radius: 10px;
-  text-align: center;
 }
 
 .ForecastDaily-small {
-  margin: 10px 0;
-  padding: 10px;
+  margin: 10px;
+  padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-}
-
-.ForecastDailyInfo {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 20px;
 }
 
 .ForecastDaily .table-heading {
@@ -30,8 +23,14 @@
   color: var(--secondary-color);
 }
 
-.ForecastDaily tr {
+.ForecastDaily-small tr {
   color: var(--primary-color);
+  line-height: 40px;
+}
+
+.ForecastDaily-small th {
+  padding-left: 10px;
+  font-weight: 400;
 }
 
 .ForecastDaily-big {
@@ -39,6 +38,7 @@
   padding: 20px 0 10px;
   font-size: 20px;
   color: var(--primary-color);
+  text-align: center;
 }
 
 .ForecastDaily-big .row {
@@ -46,14 +46,10 @@
   justify-content: space-around;
 }
 
-.ForecastDaily .info {
+.ForecastDaily-big .info {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 20px;
-}
-
-.ForecastDaily .day {
-  font-weight: 500;
 }
 
 .ForecastDaily-big .row ul {

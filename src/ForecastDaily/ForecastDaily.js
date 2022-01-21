@@ -18,7 +18,7 @@ const ForecastDaily = () => {
         <table className="table table-sm d-lg-none shadow">
           <tbody>
             <tr>
-              <th scope="row">Wednesday</th>
+              <th className="day">Wednesday</th>
               <td>
                 <img
                   src={forecastdata.icon}
@@ -93,7 +93,7 @@ const ForecastDaily = () => {
 
       <div className="ForecastDaily-big">
         <div className="row">
-          <div className="col-2 d-none d-md-block info">
+          <div className="col-2 d-none d-lg-block info">
             <ul>
               <li className="day">Thursday</li>
               <li>
@@ -111,7 +111,7 @@ const ForecastDaily = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 d-none d-md-block info">
+          <div className="col-2 d-none d-lg-block info">
             <ul>
               <li className="day">Friday</li>
               <li>
@@ -129,7 +129,7 @@ const ForecastDaily = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 d-none d-md-block info">
+          <div className="col-2 d-none d-lg-block info">
             <ul>
               <li className="day">Saturday</li>
               <li>
@@ -147,7 +147,7 @@ const ForecastDaily = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 d-none d-md-block info">
+          <div className="col-2 d-none d-lg-block info">
             <ul>
               <li className="day">Sunday</li>
               <li>
@@ -165,7 +165,7 @@ const ForecastDaily = () => {
               </li>
             </ul>
           </div>
-          <div className="col-2 d-none d-md-block info">
+          <div className="col-2 d-none d-lg-block info">
             <ul>
               <li className="day">Monday</li>
               <li>

@@ -3,21 +3,21 @@ import "./Navbar.css"
 
 const Navbar = () => {
   return (
-    <div className="navbar-container">
+    <div className="Navbar">
       <form className="form-inline">
-        <div className="row">
-          <div className="col-8">
-            <div className="row">
-              <div className="col-6">
+        <div className="row justify-content-between">
+          <div className="col-10">
+            <div className="d-flex flex-row">
+              <div className="col-lg-6 col-8">
                 <input
                   className="form-control"
                   type="search"
                   placeholder="Search a city"
                   aria-label="Search"
                   autoComplete="false"
-                  autoFocus={true}></input>
+                  autoFocus="on"></input>
               </div>
-              <div className="col-3">
+              <div className="d-flex flex-row">
                 <button className="btn btn-outline-info" type="submit">
                   <i className="fas fa-search-location" title="Search"></i>
                 </button>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="col-2">
+          <div className="col-lg-1 col-2">
             <a
               href="/"
               className="btn btn-outline-info lng-btn"

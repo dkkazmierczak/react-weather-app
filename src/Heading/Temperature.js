@@ -8,7 +8,7 @@ const Temperature = props => {
   return (
     <span className="temp-heading">
       <img src={weatherdata.icon} alt={weatherdata.description} width="100" />
-      {Math.round(props.temp)}°
+      {Math.round(props.temp)}
     </span>
   )
 }
