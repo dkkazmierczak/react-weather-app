@@ -35,7 +35,7 @@
 
 .ForecastDaily-big {
   margin: 10px 0;
-  padding: 20px 0 10px;
+  padding: 30px 0 10px;
   font-size: 20px;
   color: var(--primary-color);
   text-align: center;
@@ -66,4 +66,10 @@
 
 .ForecastDaily-big .min-temp-daily {
   color: var(--secondary-color);
+}
+
+@media (max-width: 426px) {
+  .ForecastDaily {
+    font-size: 13px;
+  }
 }

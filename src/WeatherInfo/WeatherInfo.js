@@ -9,39 +9,39 @@ import FeelsLike from "./FeelsLike"
 
 import "./WeatherInfo.css"
 
-const WeatherInfo = () => {
+const WeatherInfo = props => {
   return (
     <div className="WeatherInfo container">
       <div className="row">
-        <div className="col-3 d-none d-md-block weather-info bg-color">
+        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
           <ul>
             <li>
-              <MaxTemp />
+              <MaxTemp maxTemp={props.data.maxTemp} />
             </li>
             <li>
-              <MinTemp />
+              <MinTemp minTemp={props.data.minTemp} />
             </li>
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color">
+        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
           <ul>
             <li>
-              <CurrentDate />
+              <CurrentDate currentDate={props.data.currentDate} />
             </li>
             <li>
-              <Sky />
+              <Sky description={props.data.description} />
             </li>
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color">
+        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
           <ul>
             <li>
-              <Humidity />
+              <Humidity humidity={props.data.humidity} />
             </li>
             <li>
-              <Wind />
+              <Wind wind={props.data.wind} />
             </li>
           </ul>
         </div>
@@ -53,17 +53,17 @@ const WeatherInfo = () => {
             <div className="col-12">
               <ul>
                 <li>
-                  <Sky />
+                  <Sky description={props.data.description} />
                 </li>
               </ul>
             </div>
             <div className="col-12">
               <ul>
                 <li>
-                  <Humidity />
+                  <Humidity humidity={props.data.humidity} />
                 </li>
                 <li>
-                  <Wind />
+                  <Wind wind={props.data.wind} />
                 </li>
               </ul>
             </div>
@@ -72,13 +72,13 @@ const WeatherInfo = () => {
         <div className="col-5 d-md-none weather-info bg-color">
           <ul>
             <li>
-              <FeelsLike />
+              <FeelsLike feelsLike={props.data.feelsLike} />
             </li>
             <li>
-              <MaxTemp />
+              <MaxTemp maxTemp={props.data.maxTemp} />
             </li>
             <li>
-              <MinTemp />
+              <MinTemp minTemp={props.data.minTemp} />
             </li>
           </ul>
         </div>

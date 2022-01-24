@@ -1,5 +1,5 @@
 .Heading {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .Heading h1 {
@@ -9,18 +9,34 @@
 }
 
 .Heading .temp-heading {
-  font-size: 70px;
+  color: white;
+  padding: 5px;
+}
+
+.Heading .temperature {
+  font-size: calc(3rem + 2vw);
+  text-align: center;
+}
+
+.Heading .image {
+  padding: 0;
+  width: 100px;
 }
 
 .Heading .units {
   color: var(--secondary-color);
   font-size: 27px;
-  font-weight: 400;
-  vertical-align: 30px;
+  font-weight: 300;
 }
 
-@media (max-width: 324) {
-  .Heading .temp-heading {
-    font-size: 30px;
+.Heading .feelsLike {
+  color: var(--secondary-color);
+  font-style: italic;
+  align-items: bottom;
+}
+
+@media (max-width: 424px) {
+  .Heading .image {
+    width: 60px;
   }
 }

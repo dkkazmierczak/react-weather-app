@@ -1,5 +1,5 @@
 .WeatherInfo {
-  margin: 10px 0;
+  padding: 20px 0;
 }
 
 .WeatherInfo .bg-color {
@@ -47,6 +47,10 @@
 }
 
 @media (max-width: 768px) {
+  .WeatherInfo {
+    padding: 0;
+  }
+
   .WeatherInfo .weather-info {
     font-size: 15px;
   }
@@ -61,7 +65,7 @@
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 426px) {
   .WeatherInfo .weather-info,
   .WeatherInfo .feels-like {
     font-size: 13px;

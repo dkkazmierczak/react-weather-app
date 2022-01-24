@@ -6,12 +6,23 @@
   align-items: end;
 }
 
-.Navbar .btn-outline-info {
+.Navbar .btn-info,
+.Navbar .lng-btn {
+  color: white;
+  border-color: #17a2b8;
+  background-color: #17a2b8;
+  transition: all 150ms ease-in-out;
+}
+
+.Navbar .btn-info:hover,
+.Navbar .lng-btn:hover {
   color: #17a2b8;
+  background-color: transparent;
   border-color: #17a2b8;
 }
 
-.Navbar .btn-outline-info:hover {
-  color: white;
-  background-color: #17a2b8;
+.Navbar .btn-success:hover {
+  color: #198754;
+  border-color: #198754;
+  background-color: transparent;
 }
