@@ -1,6 +1,6 @@
 .ForecastHourly {
   margin: 40px 10px 20px;
-  padding: 10px 20px 20px;
+  padding: 10px 0px 20px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   text-align: center;
@@ -34,7 +34,7 @@
 @media (max-width: 768px) {
   .ForecastHourly {
     font-size: 15px;
-    margin: 20px 10px;
+    margin: 20px 0;
   }
 
   .ForecastHourly .hf-img {

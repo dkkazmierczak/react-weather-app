@@ -1,5 +1,5 @@
 import React from "react"
-import Weather from "./Weather"
+import Navbar from "./Navbar"
 import ForecastHourly from "./ForecastHourly/ForecastHourly"
 import ForecastDaily from "./ForecastDaily/ForecastDaily"
 import Footer from "./Footer"
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="container container-app">
-        <Weather defaultCity="Koszalin" />
+        <Navbar defaultCity="Halden" />
         <ForecastHourly />
         <ForecastDaily />
         <Footer />

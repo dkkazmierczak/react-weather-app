@@ -1,35 +1,35 @@
 .Heading {
   color: white;
-  padding: 20px 0;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .Heading h1 {
   color: var(--primary-color);
-  text-align: center;
-  padding: 10px 0;
   margin: 0;
 }
 
-.Heading .temp-heading {
-  text-align: center;
+.Heading .today-date {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-weight: 300;
+  font-size: calc(0.8rem + 0.5vw);
 }
 
 .Heading .temperature {
-  font-size: calc(3rem + 1.5vw);
-  text-align: center;
+  font-size: calc(4rem + 1.5vw);
   font-weight: 300;
 }
 
 .Heading .image {
-  width: 100px;
-  vertical-align: top;
+  width: 70px;
 }
 
 .Heading .units {
   color: var(--secondary-color);
   font-size: 25px;
   font-weight: 300;
-  vertical-align: calc(1rem + 1.5vw);
+  vertical-align: calc(1.5rem + 1.5vw);
 }
 
 .Heading .feelsLike {

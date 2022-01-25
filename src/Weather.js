@@ -1,42 +1,46 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import axios from "axios"
-import Navbar from "./Navbar"
 import Heading from "./Heading/Heading"
 import WeatherInfo from "./WeatherInfo/WeatherInfo"
 
-const Weather = props => {
+const Weather = ({ city }) => {
   const [weatherData, setWeatherData] = useState(null)
 
-  const handleResponse = response => {
-    console.log(response.data)
+  const search = async () => {
+    const apiKey = "7de93f829d058519beb43617b637382e"
+    const { data } = await axios.get(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+    )
+
     setWeatherData({
-      currentDate: "Tuesday, 14:45",
-      temperature: response.data.main.temp,
-      feelsLike: response.data.main.feels_like,
-      maxTemp: response.data.main.temp_max,
-      minTemp: response.data.main.temp_min,
-      description: response.data.weather[0].description,
-      humidity: response.data.main.humidity,
-      wind: response.data.wind.speed,
-      city: response.data.name,
+      currentDate: data.dt * 1000,
+      temperature: data.main.temp,
+      feelsLike: data.main.feels_like,
+      maxTemp: data.main.temp_max,
+      minTemp: data.main.temp_min,
+      description: data.weather[0].description,
+      humidity: data.main.humidity,
+      wind: data.wind.speed,
+      city: data.name,
     })
   }
 
-  if (weatherData) {
-    return (
-      <div className="Weather">
-        <Navbar data={weatherData} />
-        <Heading data={weatherData} />
-        <WeatherInfo data={weatherData} />
-      </div>
-    )
-  } else if (!weatherData) {
-    const apiKey = "7de93f829d058519beb43617b637382e"
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`
-    axios.get(apiUrl).then(handleResponse)
+  useEffect(() => {
+    search()
+  }, [])
 
-    return "Loading..."
-  }
+  useEffect(() => {
+    search()
+  }, [city])
+
+  if (!weatherData) return "Loading..."
+
+  return (
+    <div className="Weather">
+      <Heading weatherData={weatherData} />
+      <WeatherInfo weatherData={weatherData} />
+    </div>
+  )
 }
 
 export default Weather

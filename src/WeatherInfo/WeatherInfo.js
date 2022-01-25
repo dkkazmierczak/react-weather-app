@@ -1,8 +1,6 @@
 import React from "react"
 import MaxTemp from "./MaxTemp"
 import MinTemp from "./MinTemp"
-import CurrentDate from "./CurrentDate"
-import Sky from "./Sky"
 import Humidity from "./Humidity"
 import Wind from "./Wind"
 import FeelsLike from "./FeelsLike"
@@ -16,10 +14,19 @@ const WeatherInfo = props => {
         <div className="col-3 d-none d-md-block weather-info bg-color py-5">
           <ul>
             <li>
-              <MaxTemp maxTemp={props.data.maxTemp} />
+              <MaxTemp maxTemp={props.weatherData.maxTemp} />
             </li>
             <li>
-              <MinTemp minTemp={props.data.minTemp} />
+              <MinTemp minTemp={props.weatherData.minTemp} />
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
+          <ul>
+            <li className="sky-description">{props.weatherData.description}</li>
+            <li>
+              <FeelsLike feelsLike={props.weatherData.feelsLike} />
             </li>
           </ul>
         </div>
@@ -27,21 +34,10 @@ const WeatherInfo = props => {
         <div className="col-3 d-none d-md-block weather-info bg-color py-5">
           <ul>
             <li>
-              <CurrentDate currentDate={props.data.currentDate} />
+              <Humidity humidity={props.weatherData.humidity} />
             </li>
             <li>
-              <Sky description={props.data.description} />
-            </li>
-          </ul>
-        </div>
-
-        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
-          <ul>
-            <li>
-              <Humidity humidity={props.data.humidity} />
-            </li>
-            <li>
-              <Wind wind={props.data.wind} />
+              <Wind wind={props.weatherData.wind} />
             </li>
           </ul>
         </div>
@@ -49,38 +45,38 @@ const WeatherInfo = props => {
 
       <div className="row">
         <div className="col-5 d-md-none weather-info bg-color">
+          <ul>
+            <li>
+              <FeelsLike feelsLike={props.weatherData.feelsLike} />
+            </li>
+            <li>
+              <MaxTemp maxTemp={props.weatherData.maxTemp} />
+            </li>
+            <li>
+              <MinTemp minTemp={props.weatherData.minTemp} />
+            </li>
+          </ul>
+        </div>
+        <div className="col-5 d-md-none weather-info bg-color">
           <div className="row">
             <div className="col-12">
               <ul>
-                <li>
-                  <Sky description={props.data.description} />
+                <li className="sky-description">
+                  {props.weatherData.description}
                 </li>
               </ul>
             </div>
             <div className="col-12">
               <ul>
                 <li>
-                  <Humidity humidity={props.data.humidity} />
+                  <Humidity humidity={props.weatherData.humidity} />
                 </li>
                 <li>
-                  <Wind wind={props.data.wind} />
+                  <Wind wind={props.weatherData.wind} />
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-        <div className="col-5 d-md-none weather-info bg-color">
-          <ul>
-            <li>
-              <FeelsLike feelsLike={props.data.feelsLike} />
-            </li>
-            <li>
-              <MaxTemp maxTemp={props.data.maxTemp} />
-            </li>
-            <li>
-              <MinTemp minTemp={props.data.minTemp} />
-            </li>
-          </ul>
         </div>
       </div>
     </div>
