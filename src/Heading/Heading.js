@@ -1,5 +1,6 @@
 import React from "react"
 import FormatDay from "../FormatDay"
+import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
 import "./Heading.css"
 
@@ -19,11 +20,7 @@ const Heading = props => {
         <FormatDay currentDate={props.weatherData.currentDate} />, {result}
       </span>
       <div className="temp-heading">
-        <img
-          src="http://openweathermap.org/img/wn/10d@2x.png"
-          alt={props.weatherData.description}
-          width="100px"
-        />
+        <WeatherIcon icon={props.weatherData.icon} />
         <span className="temperature">
           {Math.round(props.weatherData.temperature)}{" "}
           <span className="units">°C</span>

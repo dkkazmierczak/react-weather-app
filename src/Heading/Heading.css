@@ -22,7 +22,7 @@
 }
 
 .Heading .image {
-  width: 70px;
+  vertical-align: top;
 }
 
 .Heading .units {
@@ -36,10 +36,4 @@
   color: var(--secondary-color);
   font-style: italic;
   align-items: bottom;
-}
-
-@media (max-width: 424px) {
-  .Heading .image {
-    width: 60px;
-  }
 }
