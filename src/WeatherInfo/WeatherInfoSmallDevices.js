@@ -1,6 +1,4 @@
 import React from "react"
-import WeatherIcon from "../WeatherIcon/WeatherIcon"
-import FormatHours from "../FormatHours"
 
 import "./WeatherInfo.css"
 
@@ -8,7 +6,7 @@ const WeatherInfo = props => {
   return (
     <div className="WeatherInfoSmallDevices">
       <div className="row">
-        <div className="col-5 d-md-none weather-info bg-color">
+        <div className="col-5 d-md-none weather-info wrapper">
           <ul>
             <li>
               <div className="feels-like">
@@ -28,7 +26,7 @@ const WeatherInfo = props => {
             </li>
           </ul>
         </div>
-        <div className="col-5 d-md-none weather-info bg-color">
+        <div className="col-5 d-md-none weather-info wrapper">
           <div className="row">
             <div className="col-12">
               <ul>

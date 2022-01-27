@@ -8,7 +8,7 @@ const WeatherInfo = props => {
   return (
     <div className="WeatherInfoBigDevices">
       <div className="row">
-        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+        <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <ul>
             <li>
               <div className="max-temp">
@@ -23,7 +23,7 @@ const WeatherInfo = props => {
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+        <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <ul>
             <li className="sky-description">{props.weatherData.description}</li>
             <li>
@@ -35,14 +35,14 @@ const WeatherInfo = props => {
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+        <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <WeatherIcon icon="humidity" />
           <div>Humidity : {props.weatherData.humidity} %</div>
         </div>
       </div>
 
       <div className="row">
-        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+        <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <ul className="sun">
             <li>
               <WeatherIcon icon="sunrise" /> Sunrise :{" "}
@@ -57,12 +57,12 @@ const WeatherInfo = props => {
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+        <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <WeatherIcon icon="pressure" />
           <div>Pressure : {props.weatherData.pressure} hPa</div>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+        <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <WeatherIcon icon="wind" />
           <div>Wind : {props.weatherData.wind} km/h</div>
         </div>

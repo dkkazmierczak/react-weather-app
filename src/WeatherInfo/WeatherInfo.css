@@ -2,7 +2,7 @@
   padding: 20px 0;
 }
 
-.WeatherInfo .bg-color {
+.WeatherInfo .wrapper {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 20px;
