@@ -4,6 +4,8 @@ import MinTemp from "./MinTemp"
 import Humidity from "./Humidity"
 import Wind from "./Wind"
 import FeelsLike from "./FeelsLike"
+import WeatherIcon from "../WeatherIcon/WeatherIcon"
+import FormatHours from "../FormatHours"
 
 import "./WeatherInfo.css"
 
@@ -11,7 +13,7 @@ const WeatherInfo = props => {
   return (
     <div className="WeatherInfo container">
       <div className="row">
-        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
+        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
           <ul>
             <li>
               <MaxTemp maxTemp={props.weatherData.maxTemp} />
@@ -22,7 +24,7 @@ const WeatherInfo = props => {
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
+        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
           <ul>
             <li className="sky-description">{props.weatherData.description}</li>
             <li>
@@ -31,15 +33,36 @@ const WeatherInfo = props => {
           </ul>
         </div>
 
-        <div className="col-3 d-none d-md-block weather-info bg-color py-5">
-          <ul>
+        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+          <WeatherIcon icon="humidity" />
+          <Humidity humidity={props.weatherData.humidity} />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+          <ul className="sun">
             <li>
-              <Humidity humidity={props.weatherData.humidity} />
+              <WeatherIcon icon="sunrise" /> Sunrise :{" "}
+              <FormatHours date={props.weatherData.sunrise} />
             </li>
             <li>
-              <Wind wind={props.weatherData.wind} />
+              <WeatherIcon icon="sunset" />{" "}
+              <span className="sunset">
+                Sunset : <FormatHours date={props.weatherData.sunset} />
+              </span>
             </li>
           </ul>
+        </div>
+
+        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+          <WeatherIcon icon="pressure" />
+          <div>Pressure : {props.weatherData.pressure} hPa</div>
+        </div>
+
+        <div className="col-3 d-none d-md-block weather-info bg-color py-lg-5 py-4">
+          <WeatherIcon icon="wind" />
+          <Wind wind={props.weatherData.wind} />
         </div>
       </div>
 

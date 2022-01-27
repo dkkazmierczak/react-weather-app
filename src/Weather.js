@@ -23,7 +23,11 @@ const Weather = ({ city }) => {
         humidity: data.main.humidity,
         wind: data.wind.speed,
         city: data.name,
-        icon: data.weather[0].id,
+        iconID: data.weather[0].id,
+        icon: data.weather[0].icon,
+        sunrise: data.sys.sunrise,
+        sunset: data.sys.sunset,
+        pressure: data.main.pressure,
       })
   }
 

@@ -20,7 +20,10 @@ const Heading = props => {
         <FormatDay currentDate={props.weatherData.currentDate} />, {result}
       </span>
       <div className="temp-heading">
-        <WeatherIcon icon={props.weatherData.icon} />
+        <WeatherIcon
+          iconID={props.weatherData.iconID}
+          icon={props.weatherData.icon}
+        />
         <span className="temperature">
           {Math.round(props.weatherData.temperature)}{" "}
           <span className="units">°C</span>

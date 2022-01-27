@@ -6,6 +6,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .WeatherInfo .row {
@@ -27,6 +28,15 @@
   text-align: center;
 }
 
+.WeatherInfo .sun {
+  text-align: left !important;
+  padding-left: 20px;
+}
+
+.WeatherInfo .sunset {
+  color: var(--secondary-color);
+}
+
 .WeatherInfo .sky-description {
   font-style: italic;
 }
@@ -46,13 +56,26 @@
   color: var(--secondary-color);
 }
 
-@media (max-width: 768px) {
-  .WeatherInfo {
+@media (max-width: 1200px) {
+  .WeatherInfo .sun {
     padding: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .WeatherInfo .sun {
+    font-size: 13px;
   }
 
   .WeatherInfo .weather-info {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .WeatherInfo {
+    padding: 0;
   }
 
   .WeatherInfo .today-date {
