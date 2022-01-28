@@ -36,6 +36,7 @@ const ForecastDailyBigDevices = props => {
               </div>
             )
           }
+          return null
         })}
       </div>
     </div>

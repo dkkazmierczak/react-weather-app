@@ -32,6 +32,7 @@ const ForecastDailySmallDevices = props => {
               </tbody>
             )
           }
+          return null
         })}
       </table>
     </div>
