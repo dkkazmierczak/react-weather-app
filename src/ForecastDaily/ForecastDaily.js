@@ -6,10 +6,10 @@ import "./ForecastDaily.css"
 
 const ForecastDaily = props => {
   return (
-    <div className="ForecastDaily">
-      <ForecastDailySmallDevices forecastData={props.forecastData} />
-      <ForecastDailyBigDevices forecastData={props.forecastData} />
-    </div>
+    <span className="ForecastDaily">
+      <ForecastDailySmallDevices forecastDaily={props.forecastDaily} />
+      <ForecastDailyBigDevices forecastDaily={props.forecastDaily} />
+    </span>
   )
 }
 

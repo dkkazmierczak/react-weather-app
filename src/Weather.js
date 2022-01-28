@@ -14,7 +14,7 @@ const Weather = ({ city }) => {
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     )
     setWeatherData({
-      currentDate: data.dt * 1000,
+      date: data.dt,
       temperature: data.main.temp,
       feelsLike: data.main.feels_like,
       maxTemp: data.main.temp_max,

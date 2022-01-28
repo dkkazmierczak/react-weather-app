@@ -6,28 +6,33 @@ import WeatherIcon from "../WeatherIcon/WeatherIcon"
 import "./ForecastDaily.css"
 
 const ForecastDailySmallDevices = props => {
+  let forecastDaily = props.forecastDaily
   return (
     <div className="ForecastDailySmallDevices d-lg-none">
       <Heading />
-      <table className="table table-sm">
-        <tbody>
-          <tr>
-            <th className="day">
-              <FormatDay date={props.forecastData[0].dt} />
-            </th>
-            <td className="icon">
-              <WeatherIcon
-                iconID={props.forecastData[0].weather[0].id}
-                icon={props.forecastData[0].weather[0].icon}
-                className="small-icon"
-              />
-            </td>
-            <td className="min-temp">
-              {Math.round(props.forecastData[0].temp.min)}°
-            </td>
-            <td>{Math.round(props.forecastData[0].temp.max)}°</td>
-          </tr>
-        </tbody>
+      <table className="table">
+        {forecastDaily.map(function (day, index) {
+          if ((index > 0) & (index < 8)) {
+            return (
+              <tbody key={index}>
+                <tr>
+                  <th className="day">
+                    <FormatDay date={day.dt} />
+                  </th>
+                  <td className="min-temp">{Math.round(day.temp.min)}°</td>
+                  <td className="weather-icon">
+                    <WeatherIcon
+                      iconID={day.weather[0].id}
+                      icon={day.weather[0].icon}
+                      className="small-icon"
+                    />
+                  </td>
+                  <td className="max-temp">{Math.round(day.temp.max)}°</td>
+                </tr>
+              </tbody>
+            )
+          }
+        })}
       </table>
     </div>
   )

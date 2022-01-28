@@ -5,7 +5,7 @@ import WeatherIcon from "../WeatherIcon/WeatherIcon"
 import "./Heading.css"
 
 const Heading = props => {
-  const date = new Date(props.weatherData.currentDate)
+  const date = new Date(props.weatherData.date * 1000)
   const result = date.toLocaleString("pl-PL", {
     hourCycle: "h24",
     month: "2-digit",
@@ -17,7 +17,7 @@ const Heading = props => {
     <div className="Heading">
       <h1>{props.weatherData.city}</h1>
       <span className="today-date">
-        <FormatDay date={props.weatherData.currentDate} />, {result}
+        <FormatDay date={props.weatherData.date} />, {result}
       </span>
       <div className="temp-heading">
         <WeatherIcon
