@@ -54,21 +54,21 @@ const WeatherIcon = props => {
     "03n": "wi-night-alt-cloudy",
     "9d": "wi-day-rain-showers",
     "9n": "wi-night-alt-showers",
-    "10d": "wi-day-rain-showers",
+    "10d": "wi-day-showers",
     "10n": "wi-night-alt-showers",
-    humidity: "wi-humidity small-icon",
-    wind: "wi-strong-wind small-icon",
-    sunrise: "wi-sunrise small-icon",
-    sunset: "wi-sunset small-icon",
-    pressure: "wi-barometer small-icon",
-    thermometer: "wi-thermometer small-icon",
+    humidity: "wi-humidity",
+    wind: "wi-strong-wind",
+    sunrise: "wi-sunrise",
+    sunset: "wi-sunset",
+    pressure: "wi-barometer",
+    thermometer: "wi-thermometer",
   }
   return (
     <span className="WeatherIcon">
       <i
         className={`wi ${codeMapping[props.iconID]} ${
           codeMapping[props.icon]
-        } icon`}></i>
+        } ${props.className}`}></i>
     </span>
   )
 }

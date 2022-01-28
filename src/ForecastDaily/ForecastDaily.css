@@ -2,37 +2,35 @@
   border-radius: 10px;
 }
 
-.ForecastDaily-small {
+.ForecastDaily .min-temp {
+  color: var(--secondary-color);
+}
+
+/* For small devices */
+.ForecastDailySmallDevices {
   padding: 10px 0px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
-.ForecastDaily .table-heading {
+.ForecastDailySmallDevices .table-heading {
   color: var(--secondary-color);
   font-size: 10px;
   font-weight: 500;
 }
 
-.ForecastDaily .df-img {
-  width: 30px;
-}
-
-.ForecastDaily .min-temp-daily {
-  color: var(--secondary-color);
-}
-
-.ForecastDaily-small tr {
+.ForecastDailySmallDevices tr {
   color: var(--primary-color);
   line-height: 40px;
 }
 
-.ForecastDaily-small th {
+.ForecastDailySmallDevices th {
   padding-left: 10px;
   font-weight: 400;
 }
 
-.ForecastDaily-big {
+/* For big devices */
+.ForecastDailyBigDevices {
   margin: 10px 0;
   padding: 30px 0 10px;
   font-size: 20px;
@@ -40,31 +38,33 @@
   text-align: center;
 }
 
-.ForecastDaily-big .row {
+.ForecastDailyBigDevices .wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.ForecastDailyBigDevices .row {
   display: flex;
   justify-content: space-around;
 }
 
-.ForecastDaily-big .info {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.ForecastDaily-big .row ul {
+.ForecastDailyBigDevices .row ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.ForecastDaily-big .df-img-big {
-  width: 100px;
-  display: block;
-  margin: 0 auto;
+.ForecastDailyBigDevices .day {
+  padding: 10px;
 }
 
-.ForecastDaily-big .min-temp-daily {
-  color: var(--secondary-color);
+.ForecastDailyBigDevices .weather-icon {
+  padding: 30px;
+}
+
+.ForecastDailyBigDevices .temperatures {
+  padding: 10px;
 }
 
 @media (max-width: 426px) {

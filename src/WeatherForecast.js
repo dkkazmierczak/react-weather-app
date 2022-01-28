@@ -14,11 +14,8 @@ const WeatherForecast = props => {
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${apiKey}&units=metric`
     )
-    console.log(data)
-    setForecastData({
-      temperatureDailyMax: data.daily[1].temp.max,
-      temperatureDailyMin: data.daily[1].temp.min,
-    })
+    console.log(data.daily)
+    setForecastData(data.daily)
   }
 
   useEffect(() => {

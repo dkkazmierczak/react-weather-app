@@ -1,5 +1,5 @@
 const FormatDay = props => {
-  const date = new Date(props.currentDate * 1000)
+  const date = new Date(props.date * 1000)
   const days = [
     "Sunday",
     "Monday",

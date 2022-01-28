@@ -36,7 +36,7 @@ const WeatherInfo = props => {
         </div>
 
         <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
-          <WeatherIcon icon="humidity" />
+          <WeatherIcon className="small-icon" icon="humidity" />
           <div>Humidity : {props.weatherData.humidity} %</div>
         </div>
       </div>
@@ -45,11 +45,13 @@ const WeatherInfo = props => {
         <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
           <ul className="sun">
             <li>
-              <WeatherIcon icon="sunrise" /> Sunrise :{" "}
-              <FormatHours date={props.weatherData.sunrise} />
+              <WeatherIcon className="small-icon" icon="sunrise" />{" "}
+              <span className="sunrise">
+                Sunrise : <FormatHours date={props.weatherData.sunrise} />
+              </span>
             </li>
             <li>
-              <WeatherIcon icon="sunset" />{" "}
+              <WeatherIcon className="small-icon" icon="sunset" />{" "}
               <span className="sunset">
                 Sunset : <FormatHours date={props.weatherData.sunset} />
               </span>
@@ -58,12 +60,12 @@ const WeatherInfo = props => {
         </div>
 
         <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
-          <WeatherIcon icon="pressure" />
+          <WeatherIcon className="small-icon" icon="pressure" />
           <div>Pressure : {props.weatherData.pressure} hPa</div>
         </div>
 
         <div className="col-3 d-none d-md-block weather-info wrapper py-lg-5 py-4">
-          <WeatherIcon icon="wind" />
+          <WeatherIcon className="small-icon" icon="wind" />
           <div>Wind : {props.weatherData.wind} km/h</div>
         </div>
       </div>
