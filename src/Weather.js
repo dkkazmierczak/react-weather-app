@@ -30,12 +30,9 @@ const Weather = ({ city }) => {
       pressure: data.main.pressure,
       lat: data.coord.lat,
       lon: data.coord.lon,
+      timezone: data.timezone,
     })
   }
-
-  useEffect(() => {
-    search()
-  }, [])
 
   useEffect(() => {
     search()

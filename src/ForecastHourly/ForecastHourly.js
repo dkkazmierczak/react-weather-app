@@ -1,115 +1,61 @@
 import React from "react"
-import Heading from "./Heading"
+import FormatHours from "../FormatHours"
+import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
 import "./ForecastHourly.css"
 
-const ForecastHourly = () => {
-  let forecastdata = {
-    temp: 14,
-    description: "cloudy",
-    icon: "http://openweathermap.org/img/wn/10d@2x.png",
-  }
+const ForecastHourly = props => {
+  let forecastHourly = props.forecastHourly
   return (
     <div className="ForecastHourly">
-      <Heading />
-      <div className="table-responsive shadow">
+      <div className="table-heading">
+        <span role="img" aria-label="clock">
+          🕜
+        </span>
+        <span className="heading-text">HOURLY FORECAST</span>
+      </div>
+      <div className="table-responsive">
         <table className="table">
           <tbody>
             <tr>
-              <td className="time">20:00</td>
-              <td className="time">21:00</td>
-              <td className="time">22:00</td>
-              <td className="time">23:00</td>
-              <td className="time">00:00</td>
-              <td className="time">01:00</td>
-              <td className="time">02:00</td>
-              <td className="time">03:00</td>
-              <td className="time">04:00</td>
-              <td className="time">05:00</td>
+              {forecastHourly.map(function (hour, index) {
+                if (index < 26) {
+                  return (
+                    <td className="time" key={index}>
+                      <FormatHours date={hour.dt} timezone={props.timezone} />
+                    </td>
+                  )
+                }
+                return null
+              })}
             </tr>
             <tr>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
-              <td>
-                <img
-                  src={forecastdata.icon}
-                  className="hf-img"
-                  alt={forecastdata.description}
-                />
-              </td>
+              {forecastHourly.map(function (hour, index) {
+                if (index < 26) {
+                  return (
+                    <td className="weather-icon" key={index}>
+                      <WeatherIcon
+                        icon={hour.weather[0].icon}
+                        iconID={hour.weather[0].id}
+                        className="small-icon"
+                      />
+                    </td>
+                  )
+                }
+                return null
+              })}
             </tr>
             <tr>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
-              <td className="temperature">{Math.round(1)}°</td>
+              {forecastHourly.map(function (hour, index) {
+                if (index < 26) {
+                  return (
+                    <td className="temperature" key={index}>
+                      {Math.round(hour.temp)}°
+                    </td>
+                  )
+                }
+                return null
+              })}
             </tr>
           </tbody>
         </table>

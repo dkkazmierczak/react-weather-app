@@ -1,23 +1,25 @@
 import React from "react"
 import FormatDay from "../FormatDay"
+import FormatHours from "../FormatHours"
 import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
 import "./Heading.css"
 
 const Heading = props => {
-  const date = new Date(props.weatherData.date * 1000)
-  const result = date.toLocaleString("pl-PL", {
-    hourCycle: "h24",
+  const daymonth = new Date(props.weatherData.date * 1000)
+  const result = daymonth.toLocaleString("pl-PL", {
     month: "2-digit",
     day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
   })
   return (
     <div className="Heading">
       <h1>{props.weatherData.city}</h1>
       <span className="today-date">
-        <FormatDay date={props.weatherData.date} />, {result}
+        <FormatDay date={props.weatherData.date} />, {result},{" "}
+        <FormatHours
+          date={props.weatherData.date}
+          timezone={props.weatherData.timezone}
+        />
       </span>
       <div className="temp-heading">
         <WeatherIcon

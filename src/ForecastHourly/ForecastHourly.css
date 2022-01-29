@@ -1,6 +1,6 @@
 .ForecastHourly {
-  margin: 40px 10px 20px;
-  padding: 10px 0px 20px;
+  margin: 50px 30px;
+  padding-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   text-align: center;
@@ -8,10 +8,20 @@
 }
 
 .ForecastHourly .table-heading {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   color: var(--secondary-color);
-  font-size: 10px;
   font-weight: 500;
   text-align: left !important;
+  padding: 5px;
+  position: sticky;
+  top: 5px;
+}
+
+.ForecastHourly .heading-text {
+  font-size: 13px;
+  padding-left: 10px;
 }
 
 .ForecastHourly .table {
@@ -19,35 +29,31 @@
   color: var(--primary-color);
 }
 
-.ForecastHourly .time {
-  padding: 20px 10px;
-}
-
-.ForecastHourly .hf-img {
-  width: 60px;
-}
-
+.ForecastHourly .time,
+.ForecastHourly .weather-icon,
 .ForecastHourly .temperature {
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 @media (max-width: 768px) {
   .ForecastHourly {
     font-size: 15px;
-    margin: 20px 0;
+    margin: 30px 0;
   }
 
-  .ForecastHourly .hf-img {
-    width: 50px;
+  .ForecastHourly .heading-text {
+    font-size: 10px;
+  }
+
+  .ForecastHourly .time,
+  .ForecastHourly .weather-icon,
+  .ForecastHourly .temperature {
+    padding: 20px 10px;
   }
 }
 
 @media (max-width: 426px) {
   .ForecastHourly {
     font-size: 13px;
-  }
-
-  .ForecastHourly .hf-img {
-    width: 40px;
   }
 }

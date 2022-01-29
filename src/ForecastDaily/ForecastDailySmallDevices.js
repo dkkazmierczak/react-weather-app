@@ -1,5 +1,4 @@
 import React from "react"
-import Heading from "./Heading"
 import FormatDay from "../FormatDay"
 import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
@@ -9,7 +8,12 @@ const ForecastDailySmallDevices = props => {
   let forecastDaily = props.forecastDaily
   return (
     <div className="ForecastDailySmallDevices d-lg-none">
-      <Heading />
+      <div className="table-heading">
+        <span role="img" aria-label="calendar">
+          📅
+        </span>{" "}
+        <span className="heading-text">7-DAY FORECAST</span>
+      </div>
       <table className="table">
         {forecastDaily.map(function (day, index) {
           if ((index > 0) & (index < 8)) {

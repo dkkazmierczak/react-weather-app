@@ -7,6 +7,7 @@ import ForecastDaily from "./ForecastDaily/ForecastDaily"
 const WeatherForecast = ({ weatherData }) => {
   const [forecastHourly, setForecastHourly] = useState(null)
   const [forecastDaily, setForecastDaily] = useState(null)
+  const [timezone, setTimezone] = useState(null)
 
   const search = async () => {
     const apiKey = "7de93f829d058519beb43617b637382e"
@@ -15,14 +16,10 @@ const WeatherForecast = ({ weatherData }) => {
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${apiKey}&units=metric`
     )
-    console.log(data)
     setForecastDaily(data.daily)
     setForecastHourly(data.hourly)
+    setTimezone(data.timezone_offset)
   }
-
-  useEffect(() => {
-    search()
-  }, [])
 
   useEffect(() => {
     search()
@@ -33,7 +30,7 @@ const WeatherForecast = ({ weatherData }) => {
 
   return (
     <div className="WeatherForecast">
-      <ForecastHourly forecastHourly={forecastHourly} />
+      <ForecastHourly forecastHourly={forecastHourly} timezone={timezone} />
       <ForecastDaily forecastDaily={forecastDaily} />
     </div>
   )
