@@ -61,6 +61,10 @@
   color: var(--secondary-color);
 }
 
+.WeatherInfoBottomSmallDevices {
+  padding: 20px 0;
+}
+
 @media (max-width: 1200px) {
   .WeatherInfo .sun {
     padding: 0;

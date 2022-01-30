@@ -1,8 +1,8 @@
 body {
   background: linear-gradient(
-    300deg,
-    rgb(241, 243, 248) 0%,
-    rgb(142, 174, 253) 91%
+    150deg,
+    rgb(188, 206, 252) 0%,
+    rgb(142, 174, 253) 30%
   );
   font-family: "Poppins", sans-serif;
 }

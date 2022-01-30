@@ -40,9 +40,7 @@ const Navbar = props => {
                   <button className="btn btn-info" type="submit">
                     <i className="fas fa-search-location" title="Search"></i>
                   </button>
-                  <button
-                    type="button"
-                    className="btn btn-success d-none d-md-block">
+                  <button type="button" className="btn btn-success d-none">
                     <i className="fas fa-street-view"></i>
                   </button>
                 </div>

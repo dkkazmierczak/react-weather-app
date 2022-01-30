@@ -4,6 +4,7 @@ import axios from "axios"
 import Heading from "./Heading/Heading"
 import WeatherInfo from "./WeatherInfo/WeatherInfo"
 import WeatherForecast from "./WeatherForecast"
+import WeatherInfoBottom from "./WeatherInfo/WeatherInfoBottom"
 
 const Weather = ({ city }) => {
   const [weatherData, setWeatherData] = useState(null)
@@ -13,6 +14,7 @@ const Weather = ({ city }) => {
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     )
+    console.log(data)
     setWeatherData({
       date: data.dt,
       temperature: data.main.temp,
@@ -31,6 +33,7 @@ const Weather = ({ city }) => {
       lat: data.coord.lat,
       lon: data.coord.lon,
       timezone: data.timezone,
+      visibility: data.visibility,
     })
   }
 
@@ -45,6 +48,7 @@ const Weather = ({ city }) => {
       <Heading weatherData={weatherData} />
       <WeatherInfo weatherData={weatherData} />
       <WeatherForecast weatherData={weatherData} />
+      <WeatherInfoBottom weatherData={weatherData} />
     </div>
   )
 }

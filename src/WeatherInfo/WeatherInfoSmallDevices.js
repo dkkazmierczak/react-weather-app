@@ -27,25 +27,11 @@ const WeatherInfo = props => {
           </ul>
         </div>
         <div className="col-5 d-md-none weather-info wrapper">
-          <div className="row">
-            <div className="col-12">
-              <ul>
-                <li className="sky-description">
-                  {props.weatherData.description}
-                </li>
-              </ul>
-            </div>
-            <div className="col-12">
-              <ul>
-                <li>
-                  <div>Humidity : {props.weatherData.humidity} %</div>
-                </li>
-                <li>
-                  <div>Wind : {props.weatherData.wind} km/h</div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul>
+            <li className="sky-description">{props.weatherData.description}</li>
+            <li>Humidity : {props.weatherData.humidity} %</li>
+            <li>Wind : {props.weatherData.wind} km/h</li>
+          </ul>
         </div>
       </div>
     </div>

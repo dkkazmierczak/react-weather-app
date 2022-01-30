@@ -53,4 +53,5 @@ export const codeMapping = {
   sunset: "wi-sunset",
   pressure: "wi-barometer",
   thermometer: "wi-thermometer",
+  cloud: "wi-cloud",
 }
