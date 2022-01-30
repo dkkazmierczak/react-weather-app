@@ -22,11 +22,13 @@ const Heading = props => {
         />
       </span>
       <div className="temp-heading">
-        <WeatherIcon
-          iconID={props.weatherData.iconID}
-          icon={props.weatherData.icon}
-          className="icon"
-        />
+        <span className="heading-icon">
+          <WeatherIcon
+            iconID={props.weatherData.iconID}
+            icon={props.weatherData.icon}
+            className="icon"
+          />
+        </span>
         <span className="temperature">
           {Math.round(props.weatherData.temperature)}{" "}
           <span className="units">°C</span>

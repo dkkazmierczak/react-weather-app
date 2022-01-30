@@ -25,6 +25,10 @@
   vertical-align: top;
 }
 
+.Heading .heading-icon {
+  padding-right: 20px;
+}
+
 .Heading .units {
   color: var(--secondary-color);
   font-size: 25px;

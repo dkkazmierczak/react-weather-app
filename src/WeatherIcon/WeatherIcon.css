@@ -6,6 +6,19 @@
   font-size: 30px;
 }
 
+.rotate .wi {
+  animation: rotating 30s infinite linear forwards;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 992px) {
   .WeatherIcon .small-icon {
     font-size: 20px;
