@@ -16,7 +16,7 @@ const Footer = () => {
         </a>
         by{" "}
         <a
-          href="https://distracted-meitner-90e4b9.netlify.app/"
+          href="https://lucid-kare-ac1369.netlify.app/"
           target="_blank"
           rel="noreferrer"
           title="Link to Portfolio"
