@@ -29,10 +29,6 @@
   color: var(--primary-color);
 }
 
-/* .ForecastHourly .table-responsive::-webkit-scrollbar {
-  display: none;
-} */
-
 .ForecastHourly .time,
 .ForecastHourly .weather-icon,
 .ForecastHourly .temperature {

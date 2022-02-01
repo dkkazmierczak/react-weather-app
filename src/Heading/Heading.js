@@ -14,14 +14,14 @@ const Heading = props => {
   return (
     <div className="Heading">
       <h1>{props.weatherData.city}</h1>
-      <span className="today-date">
+      <span className="current-date">
         <FormatDay date={props.weatherData.date} />, {result},{" "}
         <FormatHours
           date={props.weatherData.date}
           timezone={props.weatherData.timezone}
         />
       </span>
-      <div className="temp-heading">
+      <div>
         <span className="heading-icon">
           <WeatherIcon
             iconID={props.weatherData.iconID}

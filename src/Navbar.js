@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Weather from "./Weather"
 
-import "./Navbar.css"
+import "./App.css"
 
 const Navbar = props => {
   const [city, setCity] = useState(props.defaultCity)
@@ -47,7 +47,7 @@ const Navbar = props => {
               </div>
             </div>
 
-            <div className="col-lg-1 col-2">
+            <div className="col-lg-1 col-2 d-none">
               <a
                 href="/"
                 className="btn btn-info lng-btn"

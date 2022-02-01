@@ -65,6 +65,10 @@
   padding: 20px 0;
 }
 
+.WeatherInfoBottomSmallDevices .text {
+  padding-top: 10px;
+}
+
 @media (max-width: 1200px) {
   .WeatherInfo .sun {
     padding: 0;

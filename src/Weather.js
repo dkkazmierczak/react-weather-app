@@ -14,7 +14,7 @@ const Weather = ({ city }) => {
     const { data } = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     )
-    console.log(data)
+
     setWeatherData({
       date: data.dt,
       temperature: data.main.temp,

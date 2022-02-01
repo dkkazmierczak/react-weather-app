@@ -18,6 +18,59 @@ body {
   backdrop-filter: blur(8px);
 }
 
+/* Navbar */
+.Navbar .navbar-container {
+  padding: 20px 0 20px 20px;
+}
+
+.Navbar .lng-btn {
+  align-items: end;
+}
+
+.Navbar .btn-info,
+.Navbar .lng-btn {
+  color: white;
+  border-color: #17a2b8;
+  background-color: #17a2b8;
+  transition: all 150ms ease-in-out;
+}
+
+.Navbar .btn-info:hover,
+.Navbar .lng-btn:hover {
+  color: #17a2b8;
+  background-color: transparent;
+  border-color: #17a2b8;
+}
+
+.Navbar .btn-success:hover {
+  color: #198754;
+  border-color: #198754;
+  background-color: transparent;
+}
+
+/* Footer  */
+.Footer {
+  padding: 10px 0 20px;
+}
+
+.Footer h6 {
+  color: var(--secondary-color);
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.Footer .footerLink {
+  color: #17a2b8;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+}
+
+.Footer .footerLink:hover {
+  color: white;
+}
+
 @media (max-width: 324px) {
   .App .container {
     padding: 10px;

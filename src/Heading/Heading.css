@@ -9,11 +9,15 @@
   margin: 0;
 }
 
-.Heading .today-date {
+.Heading .current-date {
   color: var(--secondary-color);
   font-style: italic;
   font-weight: 300;
   font-size: calc(0.8rem + 0.5vw);
+}
+
+.Heading .heading-icon {
+  padding-right: 20px;
 }
 
 .Heading .temperature {
@@ -21,23 +25,9 @@
   font-weight: 300;
 }
 
-.Heading .image {
-  vertical-align: top;
-}
-
-.Heading .heading-icon {
-  padding-right: 20px;
-}
-
 .Heading .units {
   color: var(--secondary-color);
   font-size: 25px;
   font-weight: 300;
   vertical-align: calc(1.5rem + 1.5vw);
-}
-
-.Heading .feelsLike {
-  color: var(--secondary-color);
-  font-style: italic;
-  align-items: bottom;
 }
