@@ -40,7 +40,7 @@ export const codeMapping = {
   "01d": "wi-day-sunny",
   "01n": "wi-night-clear",
   "02d": "wi-day-sunny-overcast",
-  "02n": "wi-day-cloudy",
+  "02n": "wi-night-alt-cloudy",
   "03d": "wi-day-sunny-overcast",
   "03n": "wi-night-alt-cloudy",
   "9d": "wi-day-rain-showers",
