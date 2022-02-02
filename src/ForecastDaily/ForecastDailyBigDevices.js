@@ -9,7 +9,7 @@ const ForecastDailyBigDevices = props => {
   return (
     <div className="ForecastDailyBigDevices d-none d-lg-block">
       <div className="row">
-        {forecastDaily.map(function (day, index) {
+        {forecastDaily.map((day, index) => {
           if ((index > 0) & (index < 6)) {
             return (
               <div className="col-2 wrapper" key={index}>

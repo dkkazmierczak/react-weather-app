@@ -18,7 +18,7 @@ const ForecastHourly = props => {
         <table className="table">
           <tbody>
             <tr>
-              {forecastHourly.map(function (hour, index) {
+              {forecastHourly.map((hour, index) => {
                 if (index < 26) {
                   return (
                     <td className="time" key={index}>
@@ -30,7 +30,7 @@ const ForecastHourly = props => {
               })}
             </tr>
             <tr>
-              {forecastHourly.map(function (hour, index) {
+              {forecastHourly.map((hour, index) => {
                 if (index < 26) {
                   return (
                     <td className="weather-icon" key={index}>
@@ -46,7 +46,7 @@ const ForecastHourly = props => {
               })}
             </tr>
             <tr>
-              {forecastHourly.map(function (hour, index) {
+              {forecastHourly.map((hour, index) => {
                 if (index < 26) {
                   return (
                     <td className="temperature" key={index}>

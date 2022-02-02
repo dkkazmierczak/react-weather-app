@@ -15,7 +15,7 @@ const ForecastDailySmallDevices = props => {
         <span className="heading-text">7-DAY FORECAST</span>
       </div>
       <table className="table">
-        {forecastDaily.map(function (day, index) {
+        {forecastDaily.map((day, index) => {
           if ((index > 0) & (index < 8)) {
             return (
               <tbody key={index}>
