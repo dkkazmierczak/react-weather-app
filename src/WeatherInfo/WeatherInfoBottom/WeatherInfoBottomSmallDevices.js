@@ -1,7 +1,7 @@
 import React from "react"
-import WeatherIcon from "../WeatherIcon/WeatherIcon"
+import WeatherIcon from "../../WeatherIcon/WeatherIcon"
 
-import "./WeatherInfo.scss"
+import "../WeatherInfo.scss"
 
 const WeatherInfoBottomSmallDevices = props => {
   return (

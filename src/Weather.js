@@ -4,7 +4,7 @@ import axios from "axios"
 import Heading from "./Heading/Heading"
 import WeatherInfo from "./WeatherInfo/WeatherInfo"
 import WeatherForecast from "./WeatherForecast"
-import WeatherInfoBottom from "./WeatherInfo/WeatherInfoBottom"
+import WeatherInfoBottom from "./WeatherInfo//WeatherInfoBottom/WeatherInfoBottom"
 
 const Weather = ({ city }) => {
   const [weatherData, setWeatherData] = useState(null)
