@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import ForecastHourly from "./ForecastHourly/ForecastHourly"
 import ForecastDaily from "./ForecastDaily/ForecastDaily"
+import "./WeatherForecast.scss"
 
 const WeatherForecast = ({ weatherData }) => {
   const [forecastHourly, setForecastHourly] = useState(null)

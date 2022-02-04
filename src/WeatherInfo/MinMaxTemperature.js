@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./WeatherInfo.css"
+import "./WeatherInfo.scss"
 
 const MinMaxTemperature = props => {
   return (

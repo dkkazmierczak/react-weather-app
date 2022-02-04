@@ -1,0 +1,89 @@
+@import "../sass/main.scss";
+
+.ForecastDaily {
+  border-radius: 10px;
+
+  .min-temp {
+    color: var(--secondary-color);
+  }
+}
+
+.ForecastDailySmallDevices {
+  background-color: $secondaryBgColor;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-bottom: 18px;
+  margin: 0 10px;
+
+  .table-heading {
+    background-color: $secondaryBgColor;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: $secondaryColor;
+    font-weight: 500;
+    text-align: left !important;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+
+  .heading-text {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+
+  tr {
+    color: $mainColor;
+  }
+
+  .day {
+    padding-left: 20px;
+    font-weight: 400;
+  }
+}
+
+.ForecastDailyBigDevices {
+  font-size: 20px;
+  color: $mainColor;
+  text-align: center;
+
+  .wrapper {
+    background-color: $secondaryBgColor;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .day {
+    padding: 10px;
+  }
+
+  .weather-icon {
+    padding: 30px;
+  }
+
+  .temperatures {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ForecastDailySmallDevices {
+    font-size: 15px;
+
+    .heading-text {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .ForecastDailySmallDevices {
+    font-size: 13px;
+  }
+}

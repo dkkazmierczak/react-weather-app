@@ -3,7 +3,7 @@ import FormatDay from "../FormatDay"
 import FormatHours from "../FormatHours"
 import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
-import "./Heading.css"
+import "./Heading.scss"
 
 const Heading = props => {
   const daymonth = new Date(props.weatherData.date * 1000)

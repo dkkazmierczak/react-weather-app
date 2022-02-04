@@ -1,0 +1,36 @@
+@import "../sass/main.scss";
+
+.Heading {
+  color: $mainColor;
+  padding: 40px 0;
+  text-align: center;
+
+  .current-date {
+    color: $secondaryColor;
+    font-style: italic;
+    font-weight: 300;
+    font-size: calc(0.8rem + 0.5vw);
+  }
+
+  .heading-icon {
+    padding-right: 20px;
+  }
+
+  .temperature {
+    font-size: calc(4rem + 1.5vw);
+    font-weight: 300;
+  }
+
+  .units {
+    color: $secondaryColor;
+    font-size: 25px;
+    font-weight: 300;
+    vertical-align: calc(1.5rem + 1.5vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .Heading {
+    padding: 15px 0;
+  }
+}

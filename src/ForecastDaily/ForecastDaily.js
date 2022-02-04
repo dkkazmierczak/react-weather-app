@@ -2,7 +2,7 @@ import React from "react"
 import ForecastDailySmallDevices from "./ForecastDailySmallDevices"
 import ForecastDailyBigDevices from "./ForecastDailyBigDevices"
 
-import "./ForecastDaily.css"
+import "./ForecastDaily.scss"
 
 const ForecastDaily = props => {
   return (

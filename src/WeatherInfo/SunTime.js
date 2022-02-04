@@ -2,7 +2,7 @@ import React from "react"
 import WeatherIcon from "../WeatherIcon/WeatherIcon"
 import FormatHours from "../FormatHours"
 
-import "./WeatherInfo.css"
+import "./WeatherInfo.scss"
 
 const SunTime = props => {
   return (

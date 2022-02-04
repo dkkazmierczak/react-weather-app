@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Weather from "./Weather"
 
-import "./App.css"
+import "./Navbar.scss"
 
 const Navbar = props => {
   const [city, setCity] = useState(props.defaultCity)

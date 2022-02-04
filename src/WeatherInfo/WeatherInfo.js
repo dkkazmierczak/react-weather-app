@@ -2,7 +2,7 @@ import React from "react"
 import WeatherInfoSmallDevices from "./WeatherInfoSmallDevices"
 import WeatherInfoBigDevices from "./WeatherInfoBigDevices"
 
-import "./WeatherInfo.css"
+import "./WeatherInfo.scss"
 
 const WeatherInfo = props => {
   return (

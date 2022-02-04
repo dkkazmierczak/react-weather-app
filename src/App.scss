@@ -1,0 +1,17 @@
+@import "./sass/main.scss";
+
+body {
+  background: $bodyBgColor;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-app {
+  background-color: $mainBgColor;
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 324px) {
+  .container-app {
+    padding: 10px;
+  }
+}

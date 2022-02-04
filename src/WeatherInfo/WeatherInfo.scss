@@ -1,0 +1,114 @@
+@import "../sass/main.scss";
+
+.WeatherInfo {
+  padding: 30px 0;
+  text-align: center;
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .wrapper {
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .weather-info {
+    color: $mainColor;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .sun {
+    text-align: left !important;
+    padding-left: 20px;
+  }
+
+  .sunrise {
+    padding-left: 10px;
+  }
+
+  .sunset {
+    color: $secondaryColor;
+    padding-left: 10px;
+  }
+
+  .sky-description {
+    font-style: italic;
+  }
+
+  .sky-description:first-letter {
+    text-transform: capitalize;
+  }
+
+  .feels-like {
+    color: $secondaryColor;
+    font-style: italic;
+  }
+
+  .min-temp {
+    color: $secondaryColor;
+  }
+}
+
+.WeatherInfoBottomSmallDevices {
+  .row {
+    padding: 10px 0;
+  }
+
+  .text {
+    padding-top: 10px;
+  }
+}
+
+.WeatherInfoBigDevices {
+  .row {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .WeatherInfo .sun {
+    padding: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .WeatherInfo {
+    .sun {
+      font-size: 13px;
+    }
+
+    .sunset,
+    .sunrise {
+      padding-left: 5px;
+    }
+
+    .weather-info {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .WeatherInfo {
+    padding: 15px 0;
+
+    .today-date {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .WeatherInfo {
+    .weather-info,
+    .feels-like {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "../sass/main.scss";
+
+.ForecastHourly {
+  padding-bottom: 15px;
+  background-color: $secondaryBgColor;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 60px;
+
+  .table-heading {
+    color: $secondaryColor;
+    background-color: $secondaryBgColor;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: 500;
+    text-align: left !important;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+
+  .heading-text {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+
+  .table {
+    color: $mainColor;
+  }
+
+  .time,
+  .weather-icon,
+  .temperature {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ForecastHourly {
+    margin: 0 10px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ForecastHourly {
+    font-size: 15px;
+
+    .heading-text {
+      font-size: 10px;
+    }
+
+    .time,
+    .weather-icon,
+    .temperature {
+      padding: 20px 10px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .ForecastHourly {
+    font-size: 13px;
+  }
+}

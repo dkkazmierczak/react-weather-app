@@ -1,0 +1,40 @@
+@import "./sass/main.scss";
+
+.Navbar {
+  .navbar-container {
+    padding: 20px 0 20px 30px;
+  }
+
+  .lng-btn {
+    align-items: end;
+  }
+
+  .btn-info,
+  .lng-btn {
+    color: $mainColor;
+    border-color: $thirdColor;
+    background-color: $thirdColor;
+    transition: all 150ms ease-in-out;
+  }
+
+  .btn-info:hover,
+  .lng-btn:hover {
+    color: $thirdColor;
+    background-color: transparent;
+    border-color: $thirdColor;
+  }
+
+  .btn-success:hover {
+    color: #198754;
+    border-color: #198754;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    .navbar-container {
+      padding: 20px 10px;
+    }
+  }
+}

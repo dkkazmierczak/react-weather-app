@@ -2,7 +2,7 @@ import React from "react"
 import FormatDay from "../FormatDay"
 import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
-import "./ForecastDaily.css"
+import "./ForecastDaily.scss"
 
 const ForecastDailySmallDevices = props => {
   let forecastDaily = props.forecastDaily

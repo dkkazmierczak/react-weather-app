@@ -2,7 +2,7 @@ import React from "react"
 import FormatHours from "../FormatHours"
 import WeatherIcon from "../WeatherIcon/WeatherIcon"
 
-import "./ForecastHourly.css"
+import "./ForecastHourly.scss"
 
 const ForecastHourly = props => {
   let forecastHourly = props.forecastHourly
