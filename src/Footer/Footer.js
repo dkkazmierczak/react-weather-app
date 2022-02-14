@@ -4,7 +4,7 @@ import "./Footer.scss"
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <footer className="Footer">
       <h6>
         <a
           href="https://github.com/dkkazmierczak/react-weather-app"
@@ -24,7 +24,7 @@ const Footer = () => {
           Dominika Kaźmierczak
         </a>
       </h6>
-    </div>
+    </footer>
   )
 }
 

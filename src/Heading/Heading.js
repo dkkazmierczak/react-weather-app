@@ -12,7 +12,7 @@ const Heading = props => {
     day: "2-digit",
   })
   return (
-    <div className="Heading">
+    <header className="Heading">
       <h1>{props.weatherData.city}</h1>
       <span className="current-date">
         <FormatDay date={props.weatherData.date} />, {result},{" "}
@@ -34,7 +34,7 @@ const Heading = props => {
           <span className="units">°C</span>
         </span>
       </div>
-    </div>
+    </header>
   )
 }
 export default Heading
