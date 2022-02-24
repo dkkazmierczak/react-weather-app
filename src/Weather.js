@@ -44,12 +44,12 @@ const Weather = ({ city }) => {
   if (!weatherData) return "Loading..."
 
   return (
-    <div className="Weather">
+    <section className="Weather">
       <Heading weatherData={weatherData} />
       <WeatherInfo weatherData={weatherData} />
       <WeatherForecast weatherData={weatherData} />
       <WeatherInfoBottom weatherData={weatherData} />
-    </div>
+    </section>
   )
 }
 

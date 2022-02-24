@@ -25,7 +25,9 @@
     color: $secondaryColor;
     font-size: 25px;
     font-weight: 300;
-    vertical-align: calc(1.5rem + 1.5vw);
+    top: -0.5em;
+    position: relative;
+    vertical-align: super;
   }
 }
 
